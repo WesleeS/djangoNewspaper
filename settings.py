@@ -28,7 +28,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
-
+# Kept failing CSRF certification and took a while to remember. Whoops
 CSRF_TRUSTED_ORIGINS = ["https://*.fly.dev"]
 ALLOWED_HOSTS = ["*"]
 
